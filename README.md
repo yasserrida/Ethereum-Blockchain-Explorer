@@ -1,6 +1,7 @@
 # crypto
 
 BlockChain Explorer, Search, API and Analytics Platform for Ethereum, a decentralized smart contracts platform.
+VueJS 3 | Composition Api | TypeScript | JavaScript
 
 ## Recommended IDE Setup
 

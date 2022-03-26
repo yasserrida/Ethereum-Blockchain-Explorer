@@ -1,12 +1,8 @@
 <template>
-  <main>
-    <button @click="incrementt">Click Me</button>{{ evenOrOdd }}
-    <!-- <TheWelcome /> -->
-  </main>
+  <main class="py-10 bg-gray-100 h-screen"></main>
 </template>
 
 <script lang="ts">
-// import TheWelcome from "@/components/TheWelcome.vue";
 import { defineComponent } from "vue";
 import { mapGetters, mapActions } from "vuex";
 
@@ -16,20 +12,13 @@ interface State {
 }
 
 export default defineComponent({
-  props: [],
-  components: {
-    // TheWelcome: TheWelcome,
-  },
+  components: {},
   data: (): State => {
     return { count: 0, text: "" };
   },
-  computed: mapGetters(["evenOrOdd"]),
+  computed: mapGetters([]),
   methods: {
-    ...mapActions(["increment"]),
-    incrementt() {
-      this.increment();
-      // this.count++;
-    },
+    ...mapActions([]),
   },
 });
 </script>
